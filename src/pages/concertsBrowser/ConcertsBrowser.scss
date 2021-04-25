@@ -1,0 +1,7 @@
+.concertsList{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100%;
+}

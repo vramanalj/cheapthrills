@@ -1,0 +1,22 @@
+
+.landing-content{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.landingTitle{
+    font-size: 10rem;
+    color: #DA5473;
+}
+
+.landingMessage{
+    font-size: 3rem;
+    color: #FFE7E7;
+}
+
+.landingAction{
+    font-size: 4rem;
+    color: #EFBDF2;
+}
