@@ -3,20 +3,31 @@
     height: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .landingTitle{
     font-size: 10rem;
     color: #DA5473;
+    font-weight: 600;
+
+    @media only screen and (max-width: 768px){
+        font-size: 5rem;
+    }
 }
 
 .landingMessage{
     font-size: 3rem;
     color: #FFE7E7;
+    @media only screen and (max-width: 768px){
+        font-size: 2rem;
+    }
 }
 
 .landingAction{
     font-size: 4rem;
     color: #EFBDF2;
+    @media only screen and (max-width: 768px){
+        font-size: 3rem;
+    }
 }

@@ -1,7 +1,58 @@
-.concertsList{
+.concertsList {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     overflow-y: scroll;
     height: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.titleOtherPages {
+    font-size: 4rem;
+    color: #DA5473;
+    font-weight: 600;
+}
+
+.artistName {
+    font-size: 2rem;
+    color: #EFBDF2;
+}
+
+.artistCover {
+    img {
+        border-radius: 10px 0 0 0px;
+        width: 265px;
+        height: 225px;
+        
+        @media only screen and (max-width: 420px){
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0px 0;
+        }
+    }
+}
+
+.eventCard {
+    // margin: 1rem 0;
+}
+
+.concertInfo {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cardInfoSection {
+    display: flex;
+    @media only screen and (max-width: 420px){
+        flex-wrap: wrap;
+    }
+}
+
+.concertTime {
+    color: #141E30;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
