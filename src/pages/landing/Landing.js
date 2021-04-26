@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Landing.scss'
 import { useHistory } from "react-router-dom";
-
+import axios from 'axios';
 import FrostedGlassBackdrop from '../../components/frostedGlass/FrostedGlassBackdrop';
 
 export default function Landing(props) {
+
   const history = useHistory();
+
   function openConcertsPage(){
     history.push('/concerts')
   }

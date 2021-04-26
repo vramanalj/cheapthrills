@@ -1,9 +1,13 @@
 .App {
   text-align: center;
-  background-image: url(./assets//backdrop1.jpg);
+  background-image: url(./assets//backdrop4.jpg);
   display: flex;
   flex-flow: column;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
+}
+
+button{
+  cursor: pointer;
 }
