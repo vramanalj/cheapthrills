@@ -74,6 +74,12 @@
     width: 100%;
 }
 
+.price {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+
 .artistCover {
     img {
         border-radius: 10px 0 0 0px;
@@ -98,7 +104,7 @@
     justify-content: space-around;
     width: 100%;
     @media only screen and (max-width: 420px){
-        height: 200px;
+        height: 225px;
     }
 }
 
@@ -113,4 +119,5 @@
     color: #141E30;
     font-size: 1.5rem;
     font-weight: 500;
+    display: block;
 }

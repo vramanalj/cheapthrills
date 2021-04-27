@@ -32,7 +32,7 @@ export default function ConcertsBrowser() {
             <div className="eventCard">
               <div className="cardInfoSection">
                 <div className="artistCover">
-                  <img src={concert.artistCoverImg===false?artistPlaceholder:concert.artistCoverImg}></img>
+                  <img src={concert.artistCoverImg?concert.artistCoverImg:artistPlaceholder}></img>
                 </div>
                 <div className="concertInfo">
                   <span className="artistName">{concert.ARTIST}</span>
@@ -47,6 +47,9 @@ export default function ConcertsBrowser() {
                       <span className="description">Description of the event</span>
                       <span className="location">Location of the event</span>
                     </div>
+                  </div>
+                  <div className="price">
+                    {concert.PRICE}
                   </div>
                   <div onClick={()=>{openDirections(concert.VENUE)}}>
                     <span className="concertTime">{concert.VENUE}</span>
@@ -76,6 +79,7 @@ export default function ConcertsBrowser() {
               trackArtistColor: '#ccc',
               trackNameColor: '#fff',
             }}
+            magnifySliderOnHover={true}
             autoPlay={activeArtist?true:false}
             token={token}
             uris={['spotify:artist:'+activeArtist]}

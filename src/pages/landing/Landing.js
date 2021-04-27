@@ -23,7 +23,7 @@ export default function Landing(props) {
 
 
   function openConcertsPage(){
-    history.push('/concerts',{artistdata:concertsData,token:authToken.current.access_token})
+    history.push('/concerts',{artistdata:concertsData,token:authToken.current?.access_token})
   }
 
   function logintoSpotify(){
