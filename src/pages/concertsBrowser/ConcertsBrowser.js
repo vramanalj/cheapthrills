@@ -23,7 +23,7 @@ export default function ConcertsBrowser() {
 
   return(
     <>
-    <h2 className="titleOtherPages">CHEAP THRILLS</h2>
+    <a className="titleOtherPages" href="/">CHEAP THRILLS</a>
     <FrostedGlassBackdrop>
       <div className="concertsList">
         {concertsData && concertsData.map((concert,i)=>{
@@ -40,12 +40,10 @@ export default function ConcertsBrowser() {
                     <span className="concertTime">{concert.DATE} {concert.TIME}</span>
                     <div title="Add to Calendar" id="addeventatc" className="addeventatc calendardiv">
                       Add to Calendar
-                      <span className="start">05/10/2021 08:00 AM</span>
-                      <span className="end">05/10/2021 10:00 AM</span>
-                      <span className="timezone">America/Los_Angeles</span>
-                      <span className="title">Summary of the event</span>
-                      <span className="description">Description of the event</span>
-                      <span className="location">Location of the event</span>
+                      <span className="start">{concert.DATE} {concert.TIME}</span>
+                      <span className="timezone">America/New_York</span>
+                      <span className="title">Concert by {concert.ARTIST} at {concert.VENUE}</span>
+                      <span className="location">{concert.VENUE}, Montreal, Quebec</span>
                     </div>
                   </div>
                   <div className="price">
