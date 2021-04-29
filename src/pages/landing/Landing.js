@@ -32,7 +32,7 @@ export default function Landing(props) {
       // redirect_uri: "http://localhost:3000",
       redirect_uri: "https://cheapthrills-solink-demo.netlify.app",
       authorization: "https://accounts.spotify.com/authorize",
-      scopes: "streaming user-read-email user-read-private user-read-playback-state user-modify-playback-state",
+      scopes: {request: ["streaming user-read-email user-read-private user-read-playback-state user-modify-playback-state"]},
       response_type: "token"
     });
     client.callback();
