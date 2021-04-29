@@ -28,7 +28,7 @@ export default function Landing(props) {
 
   function logintoSpotify(){
     let client = new JSO({
-      client_id: "1956304451ee4685a09898316d9eaffb",
+      client_id: "8ac27823b50f4ed1bbc8f6938d5b2956",
       // redirect_uri: "http://localhost:3000",
       redirect_uri: "https://cheapthrills-solink-demo.netlify.app",
       authorization: "https://accounts.spotify.com/authorize",

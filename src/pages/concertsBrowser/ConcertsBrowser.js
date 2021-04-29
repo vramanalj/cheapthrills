@@ -11,9 +11,9 @@ import './ConcertsBrowser.scss';
 export default function ConcertsBrowser() {
 
   const location = useLocation();
-  const [concertsData, setConcertsData] = useState(location.state.artistdata);
+  const [concertsData, setConcertsData] = useState(location.state?.artistdata);
   const [activeArtist, setActiveArtist] = useState();
-  const [token, updateToken] = useState(location.state.token);
+  const [token, updateToken] = useState(location.state?.token);
   function openDirections(venue){
     let formattedVenue = venue.replace(/ /g, '+');
     let mapsURL='https://www.google.com/maps/dir/?api=1&destination='+formattedVenue+'+Montreal+Quebec';
